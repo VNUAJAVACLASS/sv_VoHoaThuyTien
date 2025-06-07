@@ -3,20 +3,23 @@ package baitoantinchi;
 public class User {
 	private int maND;
 	private String hoTen;
+	private String lop;
 	private String diaChi;
 	private String matKhau;
 	private String loai;
 	
-	public User(String hoTen, String diaChi, String matKhau, String loai) {
+	public User(String hoTen, String diaChi,String lop, String matKhau, String loai) {
 		this.hoTen = hoTen;
 		this.diaChi = diaChi;
+		this.lop = lop;
 		this.matKhau = matKhau;
 		this.loai = loai;
 	}
 	
-	public User(int maND,String hoTen, String diaChi, String matKhau, String loai) {
+	public User(int maND,String hoTen, String diaChi, String lop,String matKhau, String loai) {
 		this.maND = maND;
 		this.hoTen = hoTen;
+		this.lop = lop;
 		this.diaChi = diaChi;
 		this.matKhau = matKhau;
 		this.loai = loai;
@@ -36,6 +39,14 @@ public class User {
 
 	public void setHoTen(String hoTen) {
 		this.hoTen = hoTen;
+	}
+	
+	public String getLop() {
+		return lop;
+	}
+
+	public void setLop(String lop) {
+		this.lop = lop;
 	}
 
 	public String getDiaChi() {

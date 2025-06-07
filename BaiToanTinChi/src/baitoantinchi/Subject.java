@@ -4,31 +4,32 @@ public class Subject {
 	private int maMH;
 	private String tenMH;
 	private int soTC;
-	private int heSo1;
-	private int heSo2;
-	private int heSo3;
-	private int heSo4;
-	private int heSo5;
+	private float diemGK;
+	private float heSo1;
+	private float heSo2;
+	private float heSo3;
+	private float diemCK;
 	
-	public Subject(String tenMH, int soTC, int heSo1, int heSo2, int heSo3, int heSo4, int heSo5) {
+	public Subject(String tenMH, int soTC, float diemGK,float heSo1, float heSo2, float heSo3, float diemCK) {
 		this.tenMH = tenMH;
 		this.soTC = soTC;
+		this.diemGK = diemGK;
 		this.heSo1 = heSo1;
 		this.heSo2 = heSo2;
 		this.heSo3 = heSo3;
-		this.heSo4 = heSo4;
-		this.heSo5 = heSo5;
+		this.diemCK = diemCK;
+
 	}
 	
-	public Subject(int maMH,String tenMH, int soTC, int heSo1, int heSo2, int heSo3, int heSo4, int heSo5) {
+	public Subject(int maMH,String tenMH, int soTC, float diemGK,float heSo1, float heSo2, float heSo3, float diemCK) {
 		this.maMH = maMH;
 		this.tenMH = tenMH;
 		this.soTC = soTC;
+		this.diemGK = diemGK;
 		this.heSo1 = heSo1;
 		this.heSo2 = heSo2;
 		this.heSo3 = heSo3;
-		this.heSo4 = heSo4;
-		this.heSo5 = heSo5;
+		this.diemCK = diemCK;
 	}
 
 	public int getMaMH() {
@@ -54,45 +55,45 @@ public class Subject {
 	public void setSoTC(int soTC) {
 		this.soTC = soTC;
 	}
+	
+	public float getDiemGK() {
+		return diemGK;
+	}
 
-	public int getHeSo1() {
+	public void setDiemGK(float diemGK) {
+		this.diemGK = diemGK;
+	}
+
+	public float getHeSo1() {
 		return heSo1;
 	}
 
-	public void setHeSo1(int heSo1) {
+	public void setHeSo1(float heSo1) {
 		this.heSo1 = heSo1;
 	}
 
-	public int getHeSo2() {
+	public float getHeSo2() {
 		return heSo2;
 	}
 
-	public void setHeSo2(int heSo2) {
+	public void setHeSo2(float heSo2) {
 		this.heSo2 = heSo2;
 	}
 
-	public int getHeSo3() {
+	public float getHeSo3() {
 		return heSo3;
 	}
 
-	public void setHeSo3(int heSo3) {
+	public void setHeSo3(float heSo3) {
 		this.heSo3 = heSo3;
 	}
 
-	public int getHeSo4() {
-		return heSo4;
+	public float getDiemCK() {
+		return diemCK;
 	}
 
-	public void setHeSo4(int heSo4) {
-		this.heSo4 = heSo4;
-	}
-
-	public int getHeSo5() {
-		return heSo5;
-	}
-
-	public void setHeSo5(int heSo5) {
-		this.heSo5 = heSo5;
+	public void setDiemCK(float diemCK) {
+		this.diemCK = diemCK;
 	}
 
 }
